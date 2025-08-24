@@ -1,2 +1,14 @@
-<h1>О блоге</h1>
-<p>Эксперименты с Laravel на Хекслете</p>
+
+@extends('layouts.app')
+
+@section('title')
+    Max
+@endsection
+
+@section('header')
+    О блоге
+@endsection
+
+@section('content')
+    Эксперименты с Laravel на Хекслете
+@endsection
