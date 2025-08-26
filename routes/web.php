@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -7,6 +8,4 @@ Route::get('/', function () {
     return "Hello world";
 });
 
-Route::get('about', function (): string {
-    return view('about');
-});
+Route::get('about', [PageController::class, 'about'])->name('about');
